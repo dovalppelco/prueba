@@ -22,7 +22,7 @@ pipeline {
 		stage ('Desplegar')
 		{
 			steps {
-				sh 'sudo docker-compose -f docker-compose-jen.yml down'
+				sh 'sudo docker-compose -f down'
 				sh 'sudo docker-compose up -d'
 			}
 		}
