@@ -22,7 +22,7 @@ pipeline {
 		stage ('Desplegar')
 		{
 			steps {
-				sh 'sudo docker-compose.yml up -d'
+				sh 'sudo docker-compose up -d'
 			}
 		}
 	}
