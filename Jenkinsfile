@@ -22,7 +22,7 @@ pipeline {
 		stage ('Desplegar')
 		{
 			steps {
-				sh 'vi docker-compose.yml'
+				sh 'echo docker-compose.yml'
 			}
 		}
 	}
