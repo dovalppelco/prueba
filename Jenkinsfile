@@ -7,5 +7,10 @@ pipeline {
 				sh 'echo inicializando...'
 			}	
 		}
+		stage ('Checando Docker'){
+			steps {
+				sh 'sudo docker ps'
+			}
+		}
 	}
 }
